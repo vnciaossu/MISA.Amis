@@ -236,6 +236,7 @@ export default {
     },
     btnSaveAddOnClick() {
       if (this.formMode == "add") {
+ 	this.employee.employeeCode = this.SetEmployeeCode;
         axios
           .post("https://localhost:44355/api/v1/Employees", this.employee)
           .then(() => {
