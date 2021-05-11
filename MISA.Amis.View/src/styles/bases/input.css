@@ -1,0 +1,38 @@
+.filter-input {
+  box-sizing: border-box;
+  width: 210px;
+  font-size: 13px;
+  height: 32px;
+  padding: 6px 10px;
+  padding-right: 1.75rem;
+  background: #fff;
+  border-radius: 3px;
+  color: #111;
+  border: 1px solid #ebedf0;
+  padding-left: 0.85em;
+  max-width: 300px;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid green;
+}
+
+input.filter-input {
+  font-family: NotoSans-Italic;
+}
+
+input[type="text"],
+input[type="date"] {
+  height: 30px;
+  width: 100%;
+  border: 1px solid #bbbbbb;
+  padding-left: 16px;
+  padding-right: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input[type="text"]:hover {
+  border-color: #019160;
+}

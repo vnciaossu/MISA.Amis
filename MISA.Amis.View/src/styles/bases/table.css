@@ -1,0 +1,52 @@
+table {
+  border-collapse: collapse;
+}
+
+table tr {
+  border-bottom: 1px solid #bbb;
+  height: 30px;
+  cursor: pointer;
+}
+
+table tbody tr:hover {
+  background-color: #acacac;
+}
+
+table thead th {
+  text-align: left;
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+table thead {
+  background-color: rgba(196, 196, 196, 0.774);
+}
+
+table tbody th {
+  padding: 10px;
+  text-align: left;
+}
+
+th,
+td {
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid rgb(146, 146, 146);
+}
+
+th:first-child,
+th:last-child,
+td:first-child,
+td:last-child {
+}
+
+th:first-child {
+  border-left: none;
+  width: 20px;
+}
+
+th:last-child {
+  border-right: none;
+}

@@ -1,0 +1,100 @@
+.ic {
+  background: url("../../assets/img/Sprites.svg") no-repeat;
+  cursor: pointer;
+}
+.ic-max {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.ic-32 {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+}
+
+.ic-36 {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+}
+
+/* Navbar icon */
+.navbar-content .nav-item .nav-item-text {
+  font-family: inherit;
+  font-size: inherit;
+}
+.navbar-content .nav-item .nav-item-1 {
+  background-position: -30px -1628px;
+}
+.navbar-content .nav-item .nav-item-2 {
+  background-position: -73px -1628px;
+}
+.navbar-content .nav-item .nav-item-3 {
+  background-position: -117px -1628px;
+}
+.navbar-content .nav-item .nav-item-4 {
+  background-position: -161px -1628px;
+}
+.navbar-content .nav-item .nav-item-5 {
+  background-position: -204px -1628px;
+}
+.navbar-content .nav-item .nav-item-6 {
+  background-position: -249px -1628px;
+}
+.navbar-content .nav-item .nav-item-7 {
+  background-position: -291px -1628px;
+}
+.navbar-content .nav-item .nav-item-8 {
+  background-position: -336px -1628px;
+}
+.navbar-content .nav-item .nav-item-9 {
+  background-position: -378px -1630px;
+}
+.navbar-content .nav-item .nav-item-10 {
+  background-position: -423px -1630px;
+}
+.navbar-content .nav-item .nav-item-11 {
+  background-position: -467px -1628px;
+}
+.navbar-content .nav-item .nav-item-12 {
+  background-position: -510px -1628px;
+}
+.navbar-content .nav-item .nav-item-13 {
+  background-position: -378px -1659px;
+}
+.navbar-content .nav-item .nav-item-14 {
+  background-position: -547px -1628px;
+}
+.navbar-content .nav-item .nav-item-15 {
+  background-position: -204px -1664px;
+}
+
+/* Header icon */
+.header-icon {
+  background-position: -843px -30px;
+  margin: 0 10px;
+}
+.user-icon {
+  background-position: -352px -894px;
+}
+
+.bell-icon {
+  background-position: -788px -30px;
+}
+
+.reload-icon {
+  background-position: -1098px -90px;
+}
+
+.find-icon {
+  background-position: -620px -31px;
+}
+
+.notice-icon {
+  background-position: -598px -463px;
+}

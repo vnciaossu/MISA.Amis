@@ -1,0 +1,119 @@
+﻿.dialog {
+}
+.dialog-header{
+  display: flex;
+}
+
+.gender-col {
+  margin-top: 7px;
+}
+
+.gender-col span{
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.gender-col input{
+  -webkit-transform: scale(1.2);
+}
+.dialog-header .title-input{
+  margin: 8px 10px 0 10px;
+  
+}
+
+.dialog-header a{
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.dialog .model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.4;
+}
+
+.dialog .dialog-content {
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 760px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding-bottom: 130px;
+}
+
+.dialog .dialog-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dialog .dialog-close-button {
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 0 4px 0 4px;
+}
+
+.dialog .dialog-close-button:hover {
+  background-color: #bbb;
+  cursor: pointer;
+}
+
+.dialog-hide {
+  display: none;
+}
+
+.dialog .dialog-footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  height: 80px;
+  border-radius: 0 0 4px 4px;
+  border-top: 1px solid #e5e5e5;
+  left: 30px;
+  right: 30px;
+
+}
+
+.footer-left{
+  width: 50%;
+  height: 100%;
+  margin: 40px 0 0 0px;
+}
+
+.footer-right{
+  width: 50%;
+  height: 100%;
+  text-align: right;
+  margin: 40px 0px 0 30px;
+
+}
+
+.footer-right > button{
+  margin-left: 10px;
+}
+
+#cbEmployeeDepartment{
+  height: 30px;
+}
+
+label{
+  font-weight: bold;
+}
+
+.m-row{
+  margin-top: 15px;
+}

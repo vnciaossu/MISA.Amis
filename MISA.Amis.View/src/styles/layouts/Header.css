@@ -1,0 +1,92 @@
+.header {
+  height: 48px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-left .header-branch {
+  display: flex;
+  align-items: center;
+}
+.header-left .header-branch .header-branch-name {
+  width: 340px;
+  padding: 0 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  color: #111;
+}
+.header-left .header-branch .header-branch .cover-icon {
+  display: flex;
+  align-items: center;
+}
+.header-left .header-branch .cover-icon .header-branch-icon {
+  background-position: -75px -356px;
+  transform: rotate(90deg);
+  margin: 0 10px;
+}
+
+.header-left .header-current .header-current-icon {
+  width: 8px;
+  height: 8px;
+  background-color: #4ea344;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.header-left .header-current .header-current-text {
+  padding-left: 7px;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  color: #111;
+}
+
+.header-right .option-cover {
+  align-items: center;
+  background-position: center;
+  height: 48px;
+  margin: 0 -20px 0 0;
+}
+.header-right .option-cover:hover {
+  background-color: rgb(192, 192, 192);
+  cursor: pointer;
+}
+
+.cover-user {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+.cover-user .user-logo {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+}
+.cover-user .user-name {
+  white-space: nowrap;
+  max-width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: NotoSans-Bold;
+  margin: 0 10px;
+}
+.cover-user .extend-icon {
+  background-position: -1071px -27px;
+  margin-right: 10px;
+}

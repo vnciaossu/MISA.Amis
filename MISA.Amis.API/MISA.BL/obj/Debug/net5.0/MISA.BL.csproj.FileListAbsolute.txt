@@ -1,0 +1,12 @@
+D:\Web\Misa\git\MISA.Amis.API\MISA.BL\bin\Debug\net5.0\MISA.BL.deps.json
+D:\Web\Misa\git\MISA.Amis.API\MISA.BL\bin\Debug\net5.0\MISA.BL.dll
+D:\Web\Misa\git\MISA.Amis.API\MISA.BL\bin\Debug\net5.0\ref\MISA.BL.dll
+D:\Web\Misa\git\MISA.Amis.API\MISA.BL\bin\Debug\net5.0\MISA.BL.pdb
+D:\Web\Misa\git\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.csprojAssemblyReference.cache
+D:\Web\Misa\git\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Web\Misa\git\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.AssemblyInfoInputs.cache
+D:\Web\Misa\git\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.AssemblyInfo.cs
+D:\Web\Misa\git\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.csproj.CoreCompileInputs.cache
+D:\Web\Misa\git\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.dll
+D:\Web\Misa\git\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\ref\MISA.BL.dll
+D:\Web\Misa\git\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.pdb

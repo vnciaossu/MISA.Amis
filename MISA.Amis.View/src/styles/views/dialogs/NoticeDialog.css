@@ -1,0 +1,67 @@
+.model {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  opacity: 70%;
+}
+
+.notice-dialog {
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 225px);
+  width: 450px;
+  height: 200px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.main-notice-dialog {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  left: 20px;
+  bottom: 20px;
+}
+
+.notice-dialog .header-notice {
+  height: 60%;
+  display: flex;
+}
+
+.notice-dialog .footer-notice {
+  height: 40%;
+  border-top: 1px solid #bbb;
+}
+
+.header-notice .dialog-notice--icon {
+  margin: 20px 10px 0 10px;
+}
+
+.header-notice .messeger-notice {
+  margin: 20px 10px 0 10px;
+  font-size: 14px;
+}
+
+div.btn-delete-no {
+  position: absolute;
+  background-color: white;
+  color: black;
+  bottom: 10px;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+div.btn-delete-no:hover {
+  background-color: #bbb;
+}
+
+div.btn-delete-yes {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  font-weight: bold;
+  border: 1px solid rgb(1, 180, 1);
+}

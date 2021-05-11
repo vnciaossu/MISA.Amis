@@ -1,0 +1,15 @@
+D:\Web\Misa\git\MISA.Amis.API\MISA.DL\bin\Debug\net5.0\MISA.BL.dll
+D:\Web\Misa\git\MISA.Amis.API\MISA.DL\obj\Debug\net5.0\MISA.DL.csprojAssemblyReference.cache
+D:\Web\Misa\git\MISA.Amis.API\MISA.DL\obj\Debug\net5.0\MISA.DL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Web\Misa\git\MISA.Amis.API\MISA.DL\obj\Debug\net5.0\MISA.DL.AssemblyInfoInputs.cache
+D:\Web\Misa\git\MISA.Amis.API\MISA.DL\obj\Debug\net5.0\MISA.DL.AssemblyInfo.cs
+D:\Web\Misa\git\MISA.Amis.API\MISA.DL\bin\Debug\net5.0\MISA.DL.deps.json
+D:\Web\Misa\git\MISA.Amis.API\MISA.DL\bin\Debug\net5.0\MISA.DL.dll
+D:\Web\Misa\git\MISA.Amis.API\MISA.DL\bin\Debug\net5.0\ref\MISA.DL.dll
+D:\Web\Misa\git\MISA.Amis.API\MISA.DL\bin\Debug\net5.0\MISA.DL.pdb
+D:\Web\Misa\git\MISA.Amis.API\MISA.DL\bin\Debug\net5.0\MISA.BL.pdb
+D:\Web\Misa\git\MISA.Amis.API\MISA.DL\obj\Debug\net5.0\MISA.DL.csproj.CoreCompileInputs.cache
+D:\Web\Misa\git\MISA.Amis.API\MISA.DL\obj\Debug\net5.0\MISA.DL.csproj.CopyComplete
+D:\Web\Misa\git\MISA.Amis.API\MISA.DL\obj\Debug\net5.0\MISA.DL.dll
+D:\Web\Misa\git\MISA.Amis.API\MISA.DL\obj\Debug\net5.0\ref\MISA.DL.dll
+D:\Web\Misa\git\MISA.Amis.API\MISA.DL\obj\Debug\net5.0\MISA.DL.pdb

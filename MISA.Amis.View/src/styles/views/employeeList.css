@@ -1,0 +1,143 @@
+#EmployeeList {
+  position: absolute;
+  left: 178px;
+  right: 0;
+  height: calc(100vh - 50px);
+  background-color: rgb(236, 236, 236);
+}
+.list-header {
+  display: flex;
+  width: 100%;
+  height: 36px;
+  margin-top: 10px;
+}
+.list-header .list-header-left {
+  position: absolute;
+  left: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.list-header .list-header-right {
+  position: absolute;
+  right: 10px;
+}
+.backgroud-table {
+  height: calc(100% - 65px);
+  margin: 10px 10px 0 10px;
+  background-color: aliceblue;
+}
+.backgroud-table .list-table {
+  overflow: auto;
+  margin: 20px 15px 0 15px;
+  height: 85%;
+}
+
+.backgroud-table .list-footer {
+  display: flex;
+  height: 5%;
+  margin: 0 15px 0 15px;
+}
+.list-footer .list-footer-left {
+  position: absolute;
+  left: -10px;
+}
+
+.list-footer .list-footer-right {
+  display: flex;
+  position: absolute;
+  right: 36px;
+}
+.footer-select-page {
+  display: flex;
+}
+
+.backgroud-table .table-kit {
+  width: 100%;
+  height: 5%;
+}
+
+.table-kit .kit {
+  display: flex;
+  position: absolute;
+  right: 0;
+  margin-top: 5px;
+}
+.kit-filter {
+  display: flex;
+}
+.filter-input {
+  margin-top: 5px;
+}
+
+.btn-reload {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.find-icon {
+  position: absolute;
+  right: 44px;
+  top: 10px;
+}
+
+.test {
+  width: 200px;
+  height: 100%;
+  background-color: red;
+}
+
+#pageSize{
+  height: 30px;
+  margin-top: -5px;
+}
+
+.select-page-prev{
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.button-custom{
+  display: inline-block;
+  background-color:aliceblue ;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: -5px;
+}
+
+.select-page-next{
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.function-select{
+  width: 20px;
+  height: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: aliceblue;
+  border-color: transparent transparent aliceblue transparent;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.function-select  option{
+  zoom: 1.2;
+  line-height: 3;
+  padding: 10px;
+}
+
+.function-select  option:focus,
+.function-select  option:checked,
+.function-select  option:hover{
+  color: #444645;
+  background: #ddd;
+}

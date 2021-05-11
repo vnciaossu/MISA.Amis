@@ -1,0 +1,68 @@
+@import "../styles/bases/icon.css";
+@import "../styles/bases/table.css";
+@import "../styles/bases/button.css";
+@import "../styles/bases/input.css";
+@import "../styles/bases/combobox.css";
+@import "../styles/bases/dialog.css";
+
+.block-select {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  text-transform: none;
+  text-decoration: none;
+  font-family: NotoSans-Regular;
+  font-size: 13px;
+}
+#app {
+  display: flex;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.m-col {
+  width: 50%;
+  float: left;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+.m-row {
+  width: 100%;
+  display: flex;
+  margin-top: 8px;
+  position: relative;
+}
+
+.m-row label {
+  display: block;
+}
+
+.m-row input,
+select {
+  margin-top: 4px;
+}
+
+@font-face {
+  font-family: "NotoSans-Regular";
+  src: url("../assets/fonts/NotoSans-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: "NotoSans-Bold";
+  src: url("../assets/fonts/NotoSans-Bold.ttf") format("opentype");
+}
+@font-face {
+  font-family: "NotoSans-Italic";
+  src: url("../assets/fonts/NotoSans-Italic.ttf") format("opentype");
+}
