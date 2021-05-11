@@ -25,10 +25,20 @@
               class="btn-reload ic ic-max reload-icon"
               @click="loadData()"
             ></div>
+            <div
+              class="btn-excel ic ic-max excel-icon"
+              @click="tableToExcel('table', 'test')"
+            ></div>
           </div>
         </div>
         <div class="list-table">
-          <table id="tblListEmployee" class="table" width="100%" border="0">
+          <table
+            ref="table"
+            id="tblListEmployee"
+            class="table"
+            width="100%"
+            border="0"
+          >
             <thead>
               <tr>
                 <th><input class="tb-checkbox" type="checkbox" /></th>
@@ -274,6 +284,13 @@ export default {
       this.isShowDelete = false;
       this.functionDelete();
     },
+    tableToExcel(table, name) {
+      if (!table.nodeType) table = this.$refs.table;
+      var ctx = { worksheet: name || "Worksheet", table: table.innerHTML };
+      window.location.href =
+        this.uri + this.base64(this.format(this.template, ctx));
+      console.log(window.location.href);
+    },
   },
   props: [],
   data() {
@@ -305,6 +322,17 @@ export default {
       isShowExits: false,
       isShowDelete: false,
       isEmployeeCode: null,
+      uri: "data:application/vnd.ms-excel;base64,",
+      template:
+        '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>',
+      base64: function(s) {
+        return window.btoa(unescape(encodeURIComponent(s)));
+      },
+      format: function(s, c) {
+        return s.replace(/{(\w+)}/g, function(m, p) {
+          return c[p];
+        });
+      },
     };
   },
   computed: {
