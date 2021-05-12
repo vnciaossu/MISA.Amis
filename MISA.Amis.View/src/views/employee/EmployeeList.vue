@@ -286,10 +286,13 @@ export default {
       this.isShowExits = true;
       this.isEmployeeCode = employeeCode;
     },
-    HideNotice() {
+    HideNotice(hide) {
       this.isShowExits = false;
       this.isShowDelete = false;
-      this.functionDelete();
+      if(hide != "hide"){
+         this.functionDelete();
+      }
+     
     },
     tableToExcel(table, name) {
       console.log(table.innerHTML);

@@ -53,7 +53,7 @@ export default {
   setup() {},
   methods: {
     btnHideNotice() {
-      this.$emit("hideNotice");
+      this.$emit("hideNotice", "hide");
     },
     btnDelete() {
       this.$emit("hideNotice");
