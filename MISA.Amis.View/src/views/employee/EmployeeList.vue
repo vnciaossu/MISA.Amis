@@ -1,6 +1,7 @@
 <template>
   <div>
     <div id="EmployeeList">
+      <div class="icon-loader" v-show="isLoading"></div>
       <div class="list-header">
         <div class="list-header-left">Nhân viên</div>
         <div class="list-header-right">
@@ -189,6 +190,7 @@ export default {
     NoticeDialog,
   },
   created() {
+    this.isLoading = true;
     this.loadData();
   },
   methods: {
@@ -210,6 +212,7 @@ export default {
           this.totalPages = 3;
           this.employees = res.data;
           this.loadTotalRecord();
+          this.isLoading = false;
         });
     },
     fomatBirthday(cusbirthday) {
@@ -241,14 +244,15 @@ export default {
       this.loadData();
     },
     filterRecord(pageIndex) {
+
       clearTimeout(this.timeOut);
       this.timeOut = setTimeout(() => {
+              this.isLoading = true;
         axios
           .get(
             `https://localhost:44355/api/v1/Employees/pagging?pageIndex=${pageIndex}&pageSize=${this.pageSizeSelected}&fillter=${this.filters}`
           )
           .then((res) => {
-            this.totalRecord = res.data.length;
             this.employees = res.data;
             this.page = pageIndex;
             if (res.data.length >= this.pageSizeSelected) {
@@ -256,6 +260,7 @@ export default {
             } else {
               this.totalPages = pageIndex;
             }
+            this.isLoading = false;
           });
       }, 500);
     },
@@ -335,6 +340,7 @@ export default {
           return c[p];
         });
       },
+      isLoading: false,
     };
   },
   computed: {
@@ -365,4 +371,30 @@ export default {
     pointer-events: none;
     opacity: 0.4;
 }
+
+.icon-loader{
+    z-index: 10000;
+    top:50%;
+    left: 50%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background: url("../../assets/img/Sprites.svg") no-repeat;
+    background-position: -1597px -882px;
+    height: 54px;
+    width: 54px;
+    transform: rotate(45deg 16deg 16deg);
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+
+}
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 </style>

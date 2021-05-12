@@ -116,3 +116,7 @@ label{
 .m-row{
   margin-top: 15px;
 }
+
+#positionName{
+  height: 30px;
+}

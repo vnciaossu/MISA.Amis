@@ -24,8 +24,6 @@
                   id="txtEmployeeCode"
                   type="text"
                   :value="SetEmployeeCode"
-                  autofocus
-                  ref="eCode"
                   v-on:input="employee.employeeCode = $event.target.value"
                   required
                 />
@@ -113,12 +111,18 @@
 
             <div class="m-row">
               <div class="m-col">
-                <label>Chức danh</label>
-                <input
-                  id="positionName"
-                  type="text"
-                  v-model="employee.employeePositionName"
-                />
+                <label>Chức danh</label>               
+                <select
+                    id="positionName"
+                    v-model="employee.employeePositionId"                   
+                  >
+                    <option
+                      v-for="position in positions"
+                      :key="position.positionId"
+                      :value="position.positionId"
+                      >{{ position.positionName }}</option
+                    >
+                  </select>
               </div>
               <div class="m-col">
                 <label>Nơi cấp</label>
@@ -224,6 +228,11 @@ export default {
       .then((res) => {
         this.departments = res.data;
       });
+    await axios
+      .get("https://localhost:44355/api/v1/EmployeePositions")
+      .then((res) => {
+        this.positions = res.data;
+      });
   },
   methods: {
     btnCloseOnClick() {
@@ -237,8 +246,8 @@ export default {
       return dayjs(date).format("YYYY-MM-DD");
     },
     btnSaveAddOnClick() {
-      if (this.formMode == "add") {      
-        this.employee.employeeCode = this.SetEmployeeCode;    
+      if (this.formMode == "add") {
+        this.employee.employeeCode = this.SetEmployeeCode;
         axios
           .post("https://localhost:44355/api/v1/Employees", this.employee)
           .then(() => {
@@ -271,6 +280,7 @@ export default {
   data() {
     return {
       departments: [],
+      positions: [],
       genders: [
         { name: "Nam", value: 1 },
         { name: "Nữ", value: 2 },
