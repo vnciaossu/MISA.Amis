@@ -1,16 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MISA.BL.Entity
+﻿namespace MISA.BL.Entity
 {
     public class Pagging
     {
+        /// <summary>
+        /// Bảng ghi
+        /// </summary>
         public int pageIndex { get; set; } = 1;
-        public int pageSize { get; set; } = 10;
-        public string fillter { get; set; } = null;
 
+        /// <summary>
+        /// Số lượng bản ghi
+        /// </summary>
+        public int pageSize { get; set; } = 10;
+
+        /// <summary>
+        /// Tên hoặc mã nhân viên nhập vào
+        /// </summary>
+        public string fillter { get; set; } = null;
     }
 }

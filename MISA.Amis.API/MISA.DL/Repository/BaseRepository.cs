@@ -21,6 +21,12 @@ namespace MISA.DL.Repository
             connectingDB = configuration.GetConnectionString("connectionDB");
         }
 
+        /// <summary>
+        /// Xóa bản ghi
+        /// </summary>
+        /// <param name="entityId"></param>
+        /// <returns></returns>
+        /// Created by: TMQuy
         public int Delete(Guid entityId)
         {
             using (dbConnection = new MySqlConnection(connectingDB))
@@ -33,6 +39,11 @@ namespace MISA.DL.Repository
             }
         }
 
+        /// <summary>
+        /// Lấy toàn bộ bản ghi
+        /// </summary>
+        /// <returns></returns>
+        /// Created by: TMQuy
         public IEnumerable<T> GetAll()
         {
             using (dbConnection = new MySqlConnection(connectingDB))
@@ -43,6 +54,12 @@ namespace MISA.DL.Repository
             }
         }
 
+        /// <summary>
+        /// Lấy theo id
+        /// </summary>
+        /// <param name="entityId"></param>
+        /// <returns></returns>
+        /// Created by: TMQuy
         public T GetById(Guid entityId)
         {
             using (dbConnection = new MySqlConnection(connectingDB))
@@ -55,6 +72,11 @@ namespace MISA.DL.Repository
             }
         }
 
+        /// <summary>
+        /// Thêm bản ghi mới
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
         public int Insert(T entity)
         {
             using (dbConnection = new MySqlConnection(connectingDB))
@@ -65,6 +87,11 @@ namespace MISA.DL.Repository
             }
         }
 
+        /// <summary>
+        /// Cập nhật bản ghi
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
         public int Update(T entity)
         {
             using (dbConnection = new MySqlConnection(connectingDB))

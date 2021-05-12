@@ -1,11 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using MISA.BL.Entity;
 using MISA.BL.Interfaces.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MISA.Amis.API.Controllers
 {
@@ -13,11 +9,18 @@ namespace MISA.Amis.API.Controllers
     [ApiController]
     public class EmployeeController : ControllerBase
     {
-        IEmployeeService _employeeService;
+        private IEmployeeService _employeeService;
+
         public EmployeeController(IEmployeeService employeeService)
         {
             _employeeService = employeeService;
         }
+
+        /// <summary>
+        /// Lấy toàn bộ bản ghi
+        /// </summary>
+        /// <returns></returns>
+        /// Created by: TMQuy
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -25,6 +28,12 @@ namespace MISA.Amis.API.Controllers
             return Ok(employees);
         }
 
+        /// <summary>
+        /// Phân trang
+        /// </summary>
+        /// <param name="pagging"></param>
+        /// <returns></returns>
+        /// Created by: TMQuy
         [HttpGet("pagging")]
         public IActionResult Pagging([FromQuery] Pagging pagging)
         {
@@ -32,6 +41,11 @@ namespace MISA.Amis.API.Controllers
             return Ok(employees);
         }
 
+        /// <summary>
+        /// Lấy số lượng bản ghi
+        /// </summary>
+        /// <returns></returns>
+        /// Created by: TMQuy
         [HttpGet("total")]
         public IActionResult GetTotalRecord()
         {
@@ -39,6 +53,12 @@ namespace MISA.Amis.API.Controllers
             return Ok(total);
         }
 
+        /// <summary>
+        /// Tìm kiếm theo id
+        /// </summary>
+        /// <param name="employeeId"></param>
+        /// <returns></returns>
+        /// Created by: TMQuy
         [HttpGet("{employeeId}")]
         public IActionResult GetById(Guid employeeId)
         {
@@ -46,11 +66,17 @@ namespace MISA.Amis.API.Controllers
             return Ok(employee);
         }
 
+        /// <summary>
+        /// Thêm mới bản ghi
+        /// </summary>
+        /// <param name="employee"></param>
+        /// <returns></returns>
+        /// Created by: TMQuy
         [HttpPost]
-        public IActionResult Post([FromBody] Employee employee) 
+        public IActionResult Post([FromBody] Employee employee)
         {
             var res = _employeeService.Insert(employee);
-            if(res > 0)
+            if (res > 0)
             {
                 return Ok(res);
             }
@@ -60,6 +86,12 @@ namespace MISA.Amis.API.Controllers
             }
         }
 
+        /// <summary>
+        /// Sửa bản ghi
+        /// </summary>
+        /// <param name="employee"></param>
+        /// <returns></returns>
+        /// Created by: TMQuy
         [HttpPut]
         public IActionResult Update([FromBody] Employee employee)
         {
@@ -73,8 +105,15 @@ namespace MISA.Amis.API.Controllers
                 return BadRequest();
             }
         }
+
+        /// <summary>
+        /// Xóa bản ghi
+        /// </summary>
+        /// <param name="employeeId"></param>
+        /// <returns></returns>
+        /// Created by: TMQuy
         [HttpDelete]
-        public IActionResult Delete([FromQuery]Guid employeeId)
+        public IActionResult Delete([FromQuery] Guid employeeId)
         {
             var res = _employeeService.Delete(employeeId);
             return Ok(res);

@@ -160,19 +160,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tumin\\.nuget\\packages\\": {}
+    "C:\\Users\\tmquy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Web\\Misa\\git\\MISA.Amis.API\\MISA.DL\\MISA.DL.csproj",
+      "projectUniqueName": "D:\\tmquy\\MISA.Amis\\MISA.Amis.API\\MISA.DL\\MISA.DL.csproj",
       "projectName": "MISA.DL",
-      "projectPath": "D:\\Web\\Misa\\git\\MISA.Amis.API\\MISA.DL\\MISA.DL.csproj",
-      "packagesPath": "C:\\Users\\tumin\\.nuget\\packages\\",
-      "outputPath": "D:\\Web\\Misa\\git\\MISA.Amis.API\\MISA.DL\\obj\\",
+      "projectPath": "D:\\tmquy\\MISA.Amis\\MISA.Amis.API\\MISA.DL\\MISA.DL.csproj",
+      "packagesPath": "C:\\Users\\tmquy\\.nuget\\packages\\",
+      "outputPath": "D:\\tmquy\\MISA.Amis\\MISA.Amis.API\\MISA.DL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tumin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tmquy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -186,8 +186,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Web\\Misa\\git\\MISA.Amis.API\\MISA.BL\\MISA.BL.csproj": {
-              "projectPath": "D:\\Web\\Misa\\git\\MISA.Amis.API\\MISA.BL\\MISA.BL.csproj"
+            "D:\\tmquy\\MISA.Amis\\MISA.Amis.API\\MISA.BL\\MISA.BL.csproj": {
+              "projectPath": "D:\\tmquy\\MISA.Amis\\MISA.Amis.API\\MISA.BL\\MISA.BL.csproj"
             }
           }
         }
@@ -230,7 +230,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

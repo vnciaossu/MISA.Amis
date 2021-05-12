@@ -18,17 +18,18 @@
           </div>
           <div class="dialog-body">
             <div class="m-row">
-              <div class="m-col">
+              <div class="m-col" style="width:30%">
                 <label>Mã <span style="color:red">*</span></label>
                 <input
                   id="txtEmployeeCode"
                   type="text"
+                  disabled = "disabled"
                   :value="SetEmployeeCode"
                   v-on:input="employee.employeeCode = $event.target.value"
                   required
                 />
               </div>
-              <div class="m-col">
+              <div class="m-col" style="width:70%">
                 <label>Tên <span style="color:red">*</span></label>
                 <input
                   id="txtEmployeeName"

@@ -3,9 +3,9 @@ using Microsoft.Extensions.Configuration;
 using MISA.BL.Entity;
 using MISA.BL.Interfaces.Repository;
 using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.Data;
-using System;
 
 namespace MISA.DL.Repository
 {
@@ -15,7 +15,14 @@ namespace MISA.DL.Repository
         {
         }
 
-        public bool CheckEmployeeCodeExits(Guid? employeeId ,string employeeCode)
+        /// <summary>
+        /// Kiểm tra mã nhân viên
+        /// </summary>
+        /// <param name="employeeId"></param>
+        /// <param name="employeeCode"></param>
+        /// <returns></returns>
+        /// Created by: TMQuy
+        public bool CheckEmployeeCodeExits(Guid? employeeId, string employeeCode)
         {
             using (dbConnection = new MySqlConnection(connectingDB))
             {
@@ -23,11 +30,16 @@ namespace MISA.DL.Repository
                 DynamicParameters param = new DynamicParameters();
                 param.Add("@EmployeeId", null);
                 param.Add("@EmployeeCode", employeeCode);
-                var res = dbConnection.QueryFirstOrDefault<bool>(sqlCommad,param: param ,commandType: CommandType.StoredProcedure);
+                var res = dbConnection.QueryFirstOrDefault<bool>(sqlCommad, param: param, commandType: CommandType.StoredProcedure);
                 return res;
             }
         }
 
+        /// <summary>
+        /// Lấy tổng số bản ghi
+        /// </summary>
+        /// <returns></returns>
+        /// Created by: TMQuy
         public int GetTotalEmployee()
         {
             using (dbConnection = new MySqlConnection(connectingDB))
@@ -38,6 +50,12 @@ namespace MISA.DL.Repository
             }
         }
 
+        /// <summary>
+        /// Phân trang
+        /// </summary>
+        /// <param name="pagging"></param>
+        /// <returns></returns>
+        /// Created by: TMQuy
         public IEnumerable<Employee> Pagging(Pagging pagging)
         {
             using (dbConnection = new MySqlConnection(connectingDB))

@@ -10,3 +10,17 @@ D:\Web\Misa\git\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.csproj.CoreCompil
 D:\Web\Misa\git\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.dll
 D:\Web\Misa\git\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\ref\MISA.BL.dll
 D:\Web\Misa\git\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.pdb
+D:\tmquy\MISA.Amis\MISA.Amis.API\MISA.BL\bin\Debug\net5.0\MISA.BL.deps.json
+D:\tmquy\MISA.Amis\MISA.Amis.API\MISA.BL\bin\Debug\net5.0\MISA.BL.dll
+D:\tmquy\MISA.Amis\MISA.Amis.API\MISA.BL\bin\Debug\net5.0\ref\MISA.BL.dll
+D:\tmquy\MISA.Amis\MISA.Amis.API\MISA.BL\bin\Debug\net5.0\MISA.BL.pdb
+D:\tmquy\MISA.Amis\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.csprojAssemblyReference.cache
+D:\tmquy\MISA.Amis\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\tmquy\MISA.Amis\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.AssemblyInfoInputs.cache
+D:\tmquy\MISA.Amis\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.AssemblyInfo.cs
+D:\tmquy\MISA.Amis\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.csproj.CoreCompileInputs.cache
+D:\tmquy\MISA.Amis\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.dll
+D:\tmquy\MISA.Amis\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\ref\MISA.BL.dll
+D:\tmquy\MISA.Amis\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.pdb
+D:\tmquy\MISA.Amis\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.Properties.Resources.resources
+D:\tmquy\MISA.Amis\MISA.Amis.API\MISA.BL\obj\Debug\net5.0\MISA.BL.csproj.GenerateResource.cache

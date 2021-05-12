@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Web\\Misa\\git\\MISA.Amis.API\\MISA.BL\\MISA.BL.csproj": {}
+    "D:\\tmquy\\MISA.Amis\\MISA.Amis.API\\MISA.BL\\MISA.BL.csproj": {}
   },
   "projects": {
-    "D:\\Web\\Misa\\git\\MISA.Amis.API\\MISA.BL\\MISA.BL.csproj": {
+    "D:\\tmquy\\MISA.Amis\\MISA.Amis.API\\MISA.BL\\MISA.BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Web\\Misa\\git\\MISA.Amis.API\\MISA.BL\\MISA.BL.csproj",
+        "projectUniqueName": "D:\\tmquy\\MISA.Amis\\MISA.Amis.API\\MISA.BL\\MISA.BL.csproj",
         "projectName": "MISA.BL",
-        "projectPath": "D:\\Web\\Misa\\git\\MISA.Amis.API\\MISA.BL\\MISA.BL.csproj",
-        "packagesPath": "C:\\Users\\tumin\\.nuget\\packages\\",
-        "outputPath": "D:\\Web\\Misa\\git\\MISA.Amis.API\\MISA.BL\\obj\\",
+        "projectPath": "D:\\tmquy\\MISA.Amis\\MISA.Amis.API\\MISA.BL\\MISA.BL.csproj",
+        "packagesPath": "C:\\Users\\tmquy\\.nuget\\packages\\",
+        "outputPath": "D:\\tmquy\\MISA.Amis\\MISA.Amis.API\\MISA.BL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tumin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tmquy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
