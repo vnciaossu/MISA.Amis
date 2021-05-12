@@ -24,6 +24,8 @@
                   id="txtEmployeeCode"
                   type="text"
                   :value="SetEmployeeCode"
+                  autofocus
+                  ref="eCode"
                   v-on:input="employee.employeeCode = $event.target.value"
                   required
                 />
@@ -235,8 +237,8 @@ export default {
       return dayjs(date).format("YYYY-MM-DD");
     },
     btnSaveAddOnClick() {
-      if (this.formMode == "add") {
- 	this.employee.employeeCode = this.SetEmployeeCode;
+      if (this.formMode == "add") {      
+        this.employee.employeeCode = this.SetEmployeeCode;    
         axios
           .post("https://localhost:44355/api/v1/Employees", this.employee)
           .then(() => {

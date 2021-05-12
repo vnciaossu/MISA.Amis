@@ -130,7 +130,7 @@
             <div class="footer-select-page">
               <div
                 class="select-page-prev"
-                v-if="page > 1"
+                :class="{'disabledbutton':! (page > 1)}"
                 @click="filterRecord((page = page - 1))"
               >
                 Trước
@@ -145,8 +145,8 @@
                 {{ p }}
               </button>
               <div
-                class="select-page-next"
-                v-if="page < totalPages"
+                class="select-page-next"              
+                :class="{'disabledbutton':! (page < totalPages)}"
                 @click="filterRecord((page = page + 1))"
               >
                 Sau
@@ -206,6 +206,8 @@ export default {
           `https://localhost:44355/api/v1/Employees/pagging?pageIndex=1&pageSize=${this.pageSizeSelected}`
         )
         .then((res) => {
+          this.page = 1;
+          this.totalPages = 3;
           this.employees = res.data;
           this.loadTotalRecord();
         });
@@ -285,11 +287,11 @@ export default {
       this.functionDelete();
     },
     tableToExcel(table, name) {
+      console.log(table.innerHTML);
       if (!table.nodeType) table = this.$refs.table;
       var ctx = { worksheet: name || "Worksheet", table: table.innerHTML };
       window.location.href =
         this.uri + this.base64(this.format(this.template, ctx));
-      console.log(window.location.href);
     },
   },
   props: [],
@@ -302,7 +304,7 @@ export default {
       isShow: false,
       totalRecord: 0,
       timeOut: null,
-      pageSizeSelected: "10",
+      pageSizeSelected: "20",
       pageSizes: [
         { name: "10 bản ghi trên 1 trang", value: 10 },
         { name: "20 bản ghi trên 1 trang", value: 20 },
@@ -357,5 +359,10 @@ export default {
 }
 .btn-pagenumber-selected {
   border: 1px solid black;
+}
+
+.disabledbutton {
+    pointer-events: none;
+    opacity: 0.4;
 }
 </style>

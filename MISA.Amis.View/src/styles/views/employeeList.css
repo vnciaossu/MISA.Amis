@@ -126,7 +126,6 @@
   background-color: aliceblue;
   border-color: transparent transparent aliceblue transparent;
   cursor: pointer;
-  z-index: 0;
 }
 
 .function-select  option{
